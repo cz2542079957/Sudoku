@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dif">
+        <item>菜鸟</item>
+        <item>入门</item>
+        <item>初级</item>
+        <item>中级</item>
+        <item>高级</item>
+        <item>大师</item>
+    </string-array>
+</resources>

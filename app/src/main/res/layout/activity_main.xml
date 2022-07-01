@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="100dp"
+                  android:layout_marginTop="100dp"
+                  android:gravity="center"
+                  android:textSize="65sp"
+                  android:text="@string/game_name">
+        </TextView>
+
+        <Button
+                android:id="@+id/start"
+                android:background="@drawable/button_bcg1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:textSize="35sp"
+                android:text="开始游戏"
+        >
+        </Button>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="50dp"
+                      android:gravity="top"
+        >
+
+            <TextView android:layout_width="100dp"
+                      android:layout_height="50dp"
+                      android:textAlignment="textEnd"
+                      android:textSize="20sp"
+                      android:text="难度:"
+            />
+
+            <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:entries="@array/dif"
+                    android:spinnerMode="dropdown"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
